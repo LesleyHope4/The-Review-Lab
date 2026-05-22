@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Review Lab | Ergonomic Chair Comparison</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            DEFAULT: '#0066FF', // Electric Blue
+                            dark: '#0B0F19',    // Dark Charcoal Text
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom behavior for smooth disclosure/FAQ toggles without heavy JS */
+        .faq-accordion summary::-webkit-details-marker { display: none; }
+        .faq-accordion summary { list-style: none; }
+    </style>
+</head>
+<body class="bg-white text-brand-dark antialiased font-sans">
+
+    <!-- STICKY NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 execution-header">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-extrabold tracking-tight text-brand-dark">
+                THE REVIEW<span class="text-brand">LAB</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#best-picks" class="hover:text-brand transition-colors">Best Picks</a>
+                <a href="#deep-dive" class="hover:text-brand transition-colors">Deep Dive</a>
+                <a href="#buying-guide" class="hover:text-brand transition-colors">Buying Guide</a>
+                <a href="#faq" class="hover:text-brand transition-colors">FAQ</a>
+            </nav>
+            <!-- Mobile quick link button -->
+            <a href="#best-picks" class="md:hidden text-xs font-semibold bg-brand text-white px-3 py-1.5 rounded">View Picks</a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-24">
+
+        <!-- SECTION 1: HERO & HOOK (ABOVE THE FOLD) -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pt-4 md:pt-12">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 text-xs font-medium text-gray-500 tracking-wider uppercase">
+                    <span>Updated: May 2026</span>
+                    <span>•</span>
+                    <span class="text-brand font-semibold">Independent Review</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-brand-dark">
+                    We Researched 50+ Ergonomic Office Chairs. Here Are the Only 3 Worth Your Money.
+                </h1>
+                <p class="text-lg text-gray-600 font-normal leading-relaxed">
+                    An independent, data-backed comparison for remote workers based on 1,000+ real user reviews.
+                </p>
+                <div>
+                    <a href="#best-picks" class="inline-block bg-brand hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded text-sm transition-all shadow-sm">
+                        See the Top 3 Winners
+                    </a>
+                </div>
+            </div>
+            <!-- Abstract Placeholder Vector Illustration -->
+            <div class="md:col-span-5 bg-gray-50 rounded-2xl aspect-square flex flex-col items-center justify-center p-8 border border-gray-100 relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+                <!-- Abstract Vector Shape Representation -->
+                <svg class="w-40 h-40 text-brand/20" viewBox="0 0 200 200" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M44.7,-76.4C58.1,-69.3,69.2,-57.2,76,-43C82.8,-28.7,85.2,-12.3,83.4,3.7C81.6,19.7,75.6,35.3,66.4,48.2C57.2,61.1,44.7,71.3,30.3,77.1C15.9,82.9,-0.4,84.4,-16.9,81.5C-33.4,78.6,-50.1,71.4,-62.4,59.3C-74.8,47.1,-82.8,30.1,-84.9,12.5C-86.9,-5.1,-82.9,-23.3,-74.1,-38.4C-65.3,-53.4,-51.7,-65.4,-36.8,-71.8C-22,-78.2,-5.9,-79.1,10.3,-77.4C26.5,-75.7,44.7,-76.4,44.7,-76.4Z" transform="translate(100 100)" />
+                </svg>
+                <div class="text-center mt-4 z-10">
+                    <span class="block font-bold text-sm text-brand-dark">The Ergonomic Lab Setup</span>
+                    <span class="text-xs text-gray-400">Data-driven Workspace Layout</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-100">
+
+        <!-- SECTION 2: THE FAST-TRACK COMPARISON TABLE -->
+        <section id="best-picks" class="space-y-8 scroll-mt-24">
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-tight">The Quick Verdict</h2>
+                <p class="text-sm text-gray-500">Short on time? Here are our top three rigorously vetted choices side-by-side.</p>
+            </div>
+
+            <!-- Responsive 3-Column Grid / Stackable Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Premium Pick -->
+                <div class="border border-brand rounded-2xl p-6 bg-white flex flex-col justify-between relative shadow-sm">
+                    <span class="absolute -top-3 left-6 bg-brand text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full">The Premium Pick</span>
+                    <div class="space-y-4 pt-2">
+                        <div class="bg-gray-50 rounded-xl aspect-[4/3] flex items-center justify-center text-gray-400 font-medium text-xs border border-gray-100">
+                            [Product Image Placeholder]
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-brand-dark">AeroSupport Max</h3>
+                            <div class="flex items-center text-amber-500 space-x-1 text-sm mt-0.5">
+                                <span>★★★★★</span>
+                                <span class="text-xs font-semibold text-brand-dark ml-1">4.8/5</span>
+                            </div>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-2 border-t border-gray-50 pt-3">
+                            <li class="flex items-start">
+                                <span class="text-brand mr-2 font-bold">•</span> Flawless, pixel-perfect dynamic lumbar tracking.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand mr-2 font-bold">•</span> Indestructible die-cast aluminum frame.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand mr-2 font-bold">•</span> 12-year full-stack component warranty.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="https://amazon.com" target="_blank" rel="noopener" class="block text-center bg-brand hover:bg-blue-700 text-white font-semibold text-sm py-2.5 px-4 rounded transition-colors">
+                            Check Price on Amazon
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Value Pick -->
+                <div class="border border-gray-200 rounded-2xl p-6 bg-white flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="inline-block bg-gray-100 text-gray-700 text-[10px] font-bold tracking-widest uppercase px-2.5 py-0.5 rounded-full">The Value Pick</div>
+                        <div class="bg-gray-50 rounded-xl aspect-[4/3] flex items-center justify-center text-gray-400 font-medium text-xs border border-gray-100">
+                            [Product Image Placeholder]
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-brand-dark">FlexiMesh Pro</h3>
+                            <div class="flex items-center text-amber-500 space-x-1 text-sm mt-0.5">
+                                <span>★★★★☆</span>
+                                <span class="text-xs font-semibold text-brand-dark ml-1">4.5/5</span>
+                            </div>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-2 border-t border-gray-50 pt-3">
+                            <li class="flex items-start">
+                                <span class="text-brand mr-2 font-bold">•</span> Highly breathable Italian-woven mesh.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand mr-2 font-bold">•</span> 3D fully-adjustable mechanical armrests.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand mr-2 font-bold">•</span> Retails at half the price of premium brands.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="https://amazon.com" target="_blank" rel="noopener" class="block text-center bg-brand hover:bg-blue-700 text-white font-semibold text-sm py-2.5 px-4 rounded transition-colors">
+                            Check Price on Amazon
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Budget Pick -->
+                <div class="border border-gray-200 rounded-2xl p-6 bg-white flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="inline-block bg-gray-100 text-gray-700 text-[10px] font-bold tracking-widest uppercase px-2.5 py-0.5 rounded-full">The Budget Pick</div>
+                        <div class="bg-gray-50 rounded-xl aspect-[4/3] flex items-center justify-center text-gray-400 font-medium text-xs border border-gray-100">
+                            [Product Image Placeholder]
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-brand-dark">ErgoBasic Task</h3>
+                            <div class="flex items-center text-amber-500 space-x-1 text-sm mt-0.5">
+                                <span>★★★★☆</span>
+                                <span class="text-xs font-semibold text-brand-dark ml-1">4.2/5</span>
+                            </div>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-2 border-t border-gray-50 pt-3">
+                            <li class="flex items-start">
+                                <span class="text-brand mr-2 font-bold">•</span> Straightforward, reliable core posture support.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand mr-2 font-bold">•</span> Incredibly fast, 15-minute home assembly.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand mr-2 font-bold">•</span> Entry-level price point for beginners.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="https://amazon.com" target="_blank" rel="noopener" class="block text-center bg-brand hover:bg-blue-700 text-white font-semibold text-sm py-2.5 px-4 rounded transition-colors">
+                            Check Price on Amazon
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="border-gray-100">
+
+        <!-- SECTION 3: THE DEEP-DIVE RESEARCH SUMMARIES -->
+        <section id="deep-dive" class="space-y-12 scroll-mt-24">
+            <div class="max-w-2xl">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-2">Deep-Dive Research Summaries</h2>
+                <p class="text-sm text-gray-500">Since we aggregate multiple review pools, we break down what actual long-term testing, video tear-downs, and buyer forums reveal over time.</p>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Product 1 Summary -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-brand-dark">1. The Premium Pick: <span class="font-normal text-gray-600">AeroSupport Max</span></h3>
+                    <p class="text-gray-700 leading-relaxed max-w-3xl">
+                        After analyzing 400 user complaints and expert video teardowns, we found that this chair offers unmatched lumbar support, though assembly takes roughly 45 minutes. The mechanical framework responds dynamically to micro-movements, making it optimal for individuals spending over 8 hours daily at a workstation.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+                        <!-- Pros -->
+                        <div class="bg-gray-50 p-4 rounded-xl space-y-2">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-green-700 flex items-center">
+                                <svg class="w-4 h-4 mr-1.5 text-green-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                                What Users Love
+                            </h4>
+                            <ul class="text-xs text-gray-600 space-y-1.5 pl-5 list-disc">
+                                <li>Instant alleviation of chronic mid-back strain.</li>
+                                <li>Armrests pivot effortlessly in all axes.</li>
+                            </ul>
+                        </div>
+                        <!-- Cons -->
+                        <div class="bg-gray-50 p-4 rounded-xl space-y-2">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-red-700 flex items-center">
+                                <svg class="w-4 h-4 mr-1.5 text-red-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                What to Consider
+                            </h4>
+                            <ul class="text-xs text-gray-600 space-y-1.5 pl-5 list-disc">
+                                <li>The mesh material feels slightly stiff during week one.</li>
+                                <li>Premium pricing demands a serious commitment.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://amazon.com" target="_blank" rel="noopener" class="text-sm font-semibold text-brand hover:underline inline-flex items-center">
+                            View current deals for AeroSupport Max here →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 Summary -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-brand-dark">2. The Value Pick: <span class="font-normal text-gray-600">FlexiMesh Pro</span></h3>
+                    <p class="text-gray-700 leading-relaxed max-w-3xl">
+                        Our research indicates that the custom Italian-woven mesh provides optimal heat dissipation. While it skips the premium polished metal styling, the structural glass-reinforced nylon build performs robustly under continuous load tests without showing sagging artifacts.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+                        <!-- Pros -->
+                        <div class="bg-gray-50 p-4 rounded-xl space-y-2">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-green-700 flex items-center">
+                                <svg class="w-4 h-4 mr-1.5 text-green-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                                What Users Love
+                            </h4>
+                            <ul class="text-xs text-gray-600 space-y-1.5 pl-5 list-disc">
+                                <li>Extremely cool fabric prevents sweating completely.</li>
+                                <li>Exceptional price-to-performance sweet spot.</li>
+                            </ul>
+                        </div>
+                        <!-- Cons -->
+                        <div class="bg-gray-50 p-4 rounded-xl space-y-2">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-red-700 flex items-center">
+                                <svg class="w-4 h-4 mr-1.5 text-red-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                What to Consider
+                            </h4>
+                            <ul class="text-xs text-gray-600 space-y-1.5 pl-5 list-disc">
+                                <li>Lacks an independent structural headrest.</li>
+                                <li>Recline lock features only three distinct positions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://amazon.com" target="_blank" rel="noopener" class="text-sm font-semibold text-brand hover:underline inline-flex items-center">
+                            View current deals for FlexiMesh Pro here →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3 Summary -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-brand-dark">3. The Budget Pick: <span class="font-normal text-gray-600">ErgoBasic Task</span></h3>
+                    <p class="text-gray-700 leading-relaxed max-w-3xl">
+                        For users tracking budget constraints, this provides standard base alignment. It foregoes complex fine-tuning options but retains high-density foam seating that keeps your pelvis neutral without bottoming out over shorter intervals.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+                        <!-- Pros -->
+                        <div class="bg-gray-50 p-4 rounded-xl space-y-2">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-green-700 flex items-center">
+                                <svg class="w-4 h-4 mr-1.5 text-green-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                                What Users Love
+                            </h4>
+                            <ul class="text-xs text-gray-600 space-y-1.5 pl-5 list-disc">
+                                <li>Assembles flawlessly out of the box in minutes.</li>
+                                <li>Compact silhouette fits small home-office nooks.</li>
+                            </ul>
+                        </div>
+                        <!-- Cons -->
+                        <div class="bg-gray-50 p-4 rounded-xl space-y-2">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-red-700 flex items-center">
+                                <svg class="w-4 h-4 mr-1.5 text-red-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                What to Consider
+                            </h4>
+                            <ul class="text-xs text-gray-600 space-y-1.5 pl-5 list-disc">
+                                <li>Armrests are static and cannot adjust up or down.</li>
+                                <li>Not tailored for individuals over 6'2".</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://amazon.com" target="_blank" rel="noopener" class="text-sm font-semibold text-brand hover:underline inline-flex items-center">
+                            View current deals for ErgoBasic Task here →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-100">
+
+        <!-- SECTION 4: THE 3-STEP BUYER’S GUIDE -->
+        <section id="buying-guide" class="space-y-8 scroll-mt-24 max-w-3xl">
+            <div class="space-y-2">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-tight">3 Pillars of Ergo Selection</h2>
+                <p class="text-sm text-gray-500">Before hitting buy on any chair, verify these criteria match your body configuration.</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="flex space-x-4">
+                    <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand/10 text-brand font-bold flex items-center justify-center text-sm">1</span>
+                    <div class="space-y-1">
+                        <h4 class="font-bold text-base text-brand-dark">Adjustable Armrests (3D/4D)</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Static armrests force you to shrug or slump your shoulders to reach your keyboard. Look for armrests that adjust independently up, down, forward, and rotate inward to protect your ulnar nerve.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex space-x-4">
+                    <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand/10 text-brand font-bold flex items-center justify-center text-sm">2</span>
+                    <div class="space-y-1">
+                        <h4 class="font-bold text-base text-brand-dark">Mesh Breathability vs. Foam Density</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Low-tier mesh stretches and sags within months. High-density molded foam or elastomeric premium weaves distribute heat and load forces evenly without fatiguing the pelvic floor structure over long sessions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex space-x-4">
+                    <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand/10 text-brand font-bold flex items-center justify-center text-sm">3</span>
+                    <div class="space-y-1">
+                        <h4 class="font-bold text-base text-brand-dark">Dynamic Mechanical Lumbar Counter-Pressure</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Your spine naturally changes angle as you shift tasks. Fixed plastic lumbar pads often introduce localized pressure points. True ergonomic designs use floating frameworks that track your lower back dynamically.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: TRANSPARENCY, BIO, & SOCIALS -->
+        <section class="bg-gray-50 rounded-2xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            <div class="md:col-span-8 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-4 text-center sm:text-left">
+                <!-- Clean Custom Logo/Avatar Representation -->
+                <div class="w-16 h-16 rounded-full bg-brand text-white flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-inner">
+                    RL
+                </div>
+                <div class="space-y-2">
+                    <h4 class="font-bold text-base text-brand-dark">Hi, I'm Alex</h4>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        I build data-driven roundups to save you hours of shopping research. By consolidating meta-reviews, testing data, and build tear-downs, I deliver clarity without marketing noise.
+                    </p>
+                    <!-- Minimalist Social Icons -->
+                    <div class="flex items-center justify-center sm:justify-start space-x-4 pt-1 text-gray-400">
+                        <!-- YouTube SVG Icon -->
+                        <a href="#" class="hover:text-brand transition-colors" aria-label="YouTube">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <!-- TikTok SVG Icon -->
+                        <a href="#" class="hover:text-brand transition-colors" aria-label="TikTok">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.05 1.62 4.2 1.22 1.39 3.01 2.21 4.86 2.4v3.83c-1.57-.14-3.12-.69-4.43-1.57-.46-.31-.88-.68-1.25-1.09v6.28c.12 4.96-4.22 9.17-9.22 8.93-4.58-.08-8.39-4.14-8.01-8.73.3-3.97 3.73-7.18 7.71-7.03.08 0 .15.01.23.01v3.87c-1.48-.12-3 .42-3.87 1.64-.95 1.25-.89 3.12.18 4.29 1.13 1.28 3.18 1.34 4.39.14.77-.73.99-1.84.99-2.88V0h-.12z"/></svg>
+                        </a>
+                        <!-- Instagram SVG Icon -->
+                        <a href="#" class="hover:text-brand transition-colors" aria-label="Instagram">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Legally Compliant Affiliate Disclaimer -->
+            <div class="md:col-span-4 border-t md:border-t-0 md:border-l border-gray-200 pt-4 md:pt-0 md:pl-6">
+                <p class="text-xs italic text-gray-500 leading-relaxed">
+                    Disclaimer: This page is reader-supported. When you buy through links on our site, we may earn an affiliate commission at no extra cost to you.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 6: THE FAQ (ACCORDION STYLE) -->
+        <section id="faq" class="space-y-6 scroll-mt-24 max-w-3xl pb-12">
+            <h2 class="text-2xl font-bold tracking-tight text-brand-dark">Frequently Asked Questions</h2>
+            
+            <div class="divide-y divide-gray-100 border-y border-gray-100">
+                <details class="group faq-accordion py-4">
+                    <summary class="flex justify-between items-center font-semibold text-sm text-brand-dark cursor-pointer select-none">
+                        <span>How do you choose these products?</span>
+                        <span class="transition group-open:rotate-180 text-gray-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        We compile architectural build blueprints, long-term consumer feedback trends across verified retailer portals, and expert dynamic structural teardown videos to eliminate outlier data points.
+                    </p>
+                </details>
+
+                <details class="group faq-accordion py-4">
+                    <summary class="flex justify-between items-center font-semibold text-sm text-brand-dark cursor-pointer select-none">
+                        <span>Is Amazon pricing accurate?</span>
+                        <span class="transition group-open:rotate-180 text-gray-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Amazon pricing structures adapt frequently based on seasonal volume. Clicking our outbound platform links dynamically transfers you to check live configurations and running promo discounts natively.
+                    </p>
+                </details>
+
+                <details class="group faq-accordion py-4">
+                    <summary class="flex justify-between items-center font-semibold text-sm text-brand-dark cursor-pointer select-none">
+                        <span>Do you accept sponsorship from chair brands?</span>
+                        <span class="transition group-open:rotate-180 text-gray-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        No. We do not accept paid product placements or native sponsorships to ensure our selection metrics remain purely data-driven and objective.
+                    </p>
+                </details>
+
+                <details class="group faq-accordion py-4">
+                    <summary class="flex justify-between items-center font-semibold text-sm text-brand-dark cursor-pointer select-none">
+                        <span>How can I reach out for specific questions?</span>
+                        <span class="transition group-open:rotate-180 text-gray-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        You can message our lab via the official contact link listed directly inside our footer layout below.
+                    </p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER BAR -->
+    <footer class="bg-brand-dark text-gray-400 text-xs py-8 border-t border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
+            <div>
+                &copy; 2026 The Review Lab. All independent rights reserved.
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="mailto:contact@thereviewlab.com" class="hover:text-white transition-colors">Contact Support</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
